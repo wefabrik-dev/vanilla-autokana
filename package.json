@@ -1,0 +1,55 @@
+{
+  "_from": "git+https://github.com/masaaki-uegaki/vanilla-autokana.git",
+  "_id": "vanilla-autokana@1.1.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/vanilla-autokana",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "vanilla-autokana@git+https://github.com/masaaki-uegaki/vanilla-autokana.git",
+    "name": "vanilla-autokana",
+    "escapedName": "vanilla-autokana",
+    "rawSpec": "git+https://github.com/masaaki-uegaki/vanilla-autokana.git",
+    "saveSpec": "git+https://github.com/masaaki-uegaki/vanilla-autokana.git",
+    "fetchSpec": "https://github.com/masaaki-uegaki/vanilla-autokana.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/masaaki-uegaki/vanilla-autokana.git#2973daf804130c606f12f1ff553c697d3e285fa5",
+  "_spec": "vanilla-autokana@git+https://github.com/masaaki-uegaki/vanilla-autokana.git",
+  "_where": "/Users/uenokeito/Documents/smasell/gitlab/smasell",
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A JavaScript library to complete furigana automatically.",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.11.1",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "license": "MIT",
+  "main": "dist/autokana.js",
+  "name": "vanilla-autokana",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint src",
+    "publish": "npm run lint && npm run test && npm run build && npm publish",
+    "test": "jest --env=jsdom",
+    "watch": "webpack --watch"
+  },
+  "version": "1.1.0"
+}
